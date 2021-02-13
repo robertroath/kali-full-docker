@@ -19,12 +19,8 @@ VOLUME /root /var/lib/postgresql
 # default LPORT for reverse shell
 EXPOSE 4444
 
-#Expose out the rest of the ports
-EXPOSE 80
-EXPOSE 22
-EXPOSE 3389
 
-Install GUI
+# Install GUI
 RUN apt install -y kali-linux-xfce
 RUN apt install -y xfce4
 RUN apt install -y xfce4-goodies
